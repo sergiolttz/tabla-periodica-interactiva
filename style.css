@@ -225,64 +225,63 @@ header p {
     pointer-events: none;
 }
 
+/* --- Cambios para Responsividad --- */
+
 @media (max-width: 1024px) {
+    body {
+        padding: 10px;
+    }
+
     .content-container {
         flex-direction: column;
+        /* Panel debajo de la tabla */
         align-items: center;
-        gap: 20px;
     }
 
     .main-wrapper {
         width: 100%;
-        overflow: hidden;
-        padding: 5px;
+        overflow-x: auto;
+        /* Permite scroll horizontal si la tabla no cabe */
+        padding-bottom: 20px;
     }
 
     .periodic-table {
-        grid-template-columns: repeat(18, minmax(0, 1fr));
-        grid-template-rows: repeat(10, auto);
-        gap: 2px;
-        padding: 10px 5px;
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .element {
-        aspect-ratio: 1 / 1.2;
-        padding: 2px;
-    }
-
-    .symbol {
-        font-size: 1rem;
-        padding-top: 5px;
-    }
-
-    .number {
-        top: 2px;
-        left: 3px;
-    }
-
-    .name {
-        display: none;
-    }
-
-    .valency {
-        margin-top: 1px;
+        /* Mantenemos el grid mínimo para que sea legible */
+        grid-template-columns: repeat(18, 55px);
+        grid-template-rows: repeat(10, 65px);
+        margin: 0 auto;
     }
 
     .info-panel {
         width: 100%;
-        max-width: none;
+        max-width: 600px;
         position: relative;
-        transform: translateY(20px);
+        /* Ya no es sticky */
+        top: 0;
+        transform: translateY(30px);
+        /* Animación desde abajo */
+        margin-top: 20px;
+    }
+
+    .info-panel.visible {
+        transform: translateY(0);
     }
 }
 
-@media (max-width: 450px) {
+/* Ajuste extra para móviles muy pequeños */
+@media (max-width: 600px) {
     .periodic-table {
-        gap: 1px;
-    }   
+        grid-template-columns: repeat(18, 45px);
+        grid-template-rows: repeat(10, 55px);
+        gap: 4px;
+        padding: 10px;
+    }
+
     .symbol {
         font-size: 1rem;
-    } 
+    }
+
+    .number {
+        font-size: 0.55rem;
+    }
 }
