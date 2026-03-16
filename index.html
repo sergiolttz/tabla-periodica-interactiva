@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header>
+                <h1>Tabla periodica interactiva</h1>
+                <p>Haz clic en un elemento activo para ver su descripción.</p>
+                <p>Ana Lattanzio - 3ro C</p>
+        </header>
+        <div class="content-container">
+            <div class="periodic-table" id="periodic-table">
+                <div class="element active" style="grid-column: 1; grid-row: 1;" data-name="Hidrógeno"
+                    data-desc="Componente esencial del agua (H2O) y de todas las grasas y azúcares." data-img="img/hidrogeno.jpg"><span
+                        class="number">1</span><span class="symbol">H</span><span class="name">Hidrógeno</span><span
+                        class="valency">1</span></div>
+                <div class="element inactive" style="grid-column: 2; grid-row: 1; opacity:0; pointer-events:none;"></div>
+                <div class="element active" style="grid-column: 18; grid-row: 1;" data-name="Helio"
+                    data-desc="Utilizado a veces para inflar bolsas de snacks dulces y evitar que se aplasten." data-img="img/helio.jpg"><span
+                        class="number">2</span><span class="symbol">He</span><span class="name">Helio</span><span
+                        class="valency">0</span></div>
+                
+                <div class="element active" style="grid-column: 1; grid-row: 2;" data-name="Litio"
+                    data-desc="Se encuentra en trazas naturales en algunas aguas minerales para masas." data-img="img/litio.jpg"><span
+                        class="number">3</span><span class="symbol">Li</span><span class="name">Litio</span><span
+                        class="valency">1</span></div>
+                <div class="element inactive" style="grid-column: 2; grid-row: 2;"><span class="number">4</span><span
+                        class="symbol">Be</span><span class="name">Berilio</span><span class="valency">2</span></div>
+                <div class="element active" style="grid-column: 13; grid-row: 2;" data-name="Boro"
+                    data-desc="Componente del vidrio de borosilicato (Pyrex) resistente al calor del horno." data-img="img/boro.jpg"><span
+                        class="number">5</span><span class="symbol">B</span><span class="name">Boro</span><span class="valency">3</span>
+                </div>
+                <div class="element active" style="grid-column: 14; grid-row: 2;" data-name="Carbono"
+                    data-desc="La base de todos los compuestos orgánicos como harina, azúcar y mantequilla." data-img="img/carbono.jpg"><span
+                        class="number">6</span><span class="symbol">C</span><span class="name">Carbono</span><span
+                        class="valency">2,4</span></div>
+                <div class="element active" style="grid-column: 15; grid-row: 2;" data-name="Nitrógeno"
+                    data-desc="Parte fundamental de las proteínas de la harina (gluten) y los huevos." data-img="img/nitrogeno.jpg"><span
+                        class="number">7</span><span class="symbol">N</span><span class="name">Nitrógeno</span><span
+                        class="valency">2,3,4,5</span></div>
+                <div class="element active" style="grid-column: 16; grid-row: 2;" data-name="Oxígeno"
+                    data-desc="Necesario para la oxidación de azúcares y para que las levaduras respiren." data-img="img/oxigeno.jpg"><span
+                        class="number">8</span><span class="symbol">O</span><span class="name">Oxígeno</span><span
+                        class="valency">2</span></div>
+                <div class="element active" style="grid-column: 17; grid-row: 2;" data-name="Flúor"
+                    data-desc="Presente en el agua corriente utilizada para preparar masas." data-img="img/fluor.jpg"><span
+                        class="number">9</span><span class="symbol">F</span><span class="name">Flúor</span><span
+                        class="valency">1</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 2;"><span class="number">10</span><span
+                        class="symbol">Ne</span><span class="name">Neón</span><span class="valency">0</span></div>
+                
+                <div class="element active" style="grid-column: 1; grid-row: 3;" data-name="Sodio"
+                    data-desc="Parte de la sal de mesa y del bicarbonato de sodio." data-img="img/sodio.jpg"><span class="number">11</span><span
+                        class="symbol">Na</span><span class="name">Sodio</span><span class="valency">1</span></div>
+                <div class="element active" style="grid-column: 2; grid-row: 3;" data-name="Magnesio"
+                    data-desc="Mineral presente en el cacao puro y los frutos secos." data-img="img/magnesio.jpg"><span class="number">12</span><span
+                        class="symbol">Mg</span><span class="name">Magnesio</span><span class="valency">2</span></div>
+                <div class="element active" style="grid-column: 13; grid-row: 3;" data-name="Aluminio"
+                    data-desc="Material común en moldes de horneado y papel de cocina." data-img="img/aluminio.jpg"><span class="number">13</span><span
+                        class="symbol">Al</span><span class="name">Aluminio</span><span class="valency">3</span></div>
+                <div class="element active" style="grid-column: 14; grid-row: 3;" data-name="Silicio"
+                    data-desc="Base de los moldes de silicona flexibles y antiadherentes." data-img="img/silicio.jpg"><span
+                        class="number">14</span><span class="symbol">Si</span><span class="name">Silicio</span><span
+                        class="valency">4</span></div>
+                <div class="element active" style="grid-column: 15; grid-row: 3;" data-name="Fósforo"
+                    data-desc="Presente en los polvos de hornear (fosfatos) para dar volumen." data-img="img/fosforo.jpg"><span
+                        class="number">15</span><span class="symbol">P</span><span class="name">Fósforo</span><span
+                        class="valency">3,5</span></div>
+                <div class="element active" style="grid-column: 16; grid-row: 3;" data-name="Azufre"
+                    data-desc="Forma puentes en las proteínas del huevo y el gluten para dar estructura." data-img="img/azufre.jpg"><span
+                        class="number">16</span><span class="symbol">S</span><span class="name">Azufre</span><span
+                        class="valency">2,4,6</span></div>
+                <div class="element active" style="grid-column: 17; grid-row: 3;" data-name="Cloro"
+                    data-desc="Componente de la sal y usado para blanquear algunas harinas." data-img="img/cloro.jpg"><span
+                        class="number">17</span><span class="symbol">Cl</span><span class="name">Cloro</span><span
+                        class="valency">1,3,5,7</span></div>
+                <div class="element active" style="grid-column: 18; grid-row: 3;" data-name="Argón"
+                    data-desc="Gas inerte usado en el envasado para preservar la frescura de galletas." data-img="img/argon.jpg"><span
+                        class="number">18</span><span class="symbol">Ar</span><span class="name">Argón</span><span
+                        class="valency">0</span></div>
+                
+                <div class="element active" style="grid-column: 1; grid-row: 4;" data-name="Potasio"
+                    data-desc="Abundante en frutas como el plátano y en el cremor tártaro." data-img="img/potasio.jpg"><span
+                        class="number">19</span><span class="symbol">K</span><span class="name">Potasio</span><span
+                        class="valency">1</span></div>
+                <div class="element active" style="grid-column: 2; grid-row: 4;" data-name="Calcio"
+                    data-desc="Mineral clave en la leche, el yogur y el fortalecimiento de lácteos." data-img="img/calcio.jpg"><span
+                        class="number">20</span><span class="symbol">Ca</span><span class="name">Calcio</span><span
+                        class="valency">2</span></div>
+                <div class="element active" style="grid-column: 3; grid-row: 4;" data-name="Escandio"
+                    data-desc="Utilizado en lámparas de alta intensidad para fotografía de alimentos." data-img="img/escandio.jpg"><span
+                        class="number">21</span><span class="symbol">Sc</span><span class="name">Escandio</span><span
+                        class="valency">3</span></div>
+                <div class="element active" style="grid-column: 4; grid-row: 4;" data-name="Titanio"
+                    data-desc="El dióxido de titanio se usa como colorante blanco en coberturas." data-img="img/titanio.jpg"><span
+                        class="number">22</span><span class="symbol">Ti</span><span class="name">Titanio</span><span
+                        class="valency">4</span></div>
+                <div class="element active" style="grid-column: 5; grid-row: 4;" data-name="Vanadio"
+                    data-desc="Mineral traza que se encuentra naturalmente en la vainilla y pimienta." data-img="img/vanadio.jpg"><span
+                        class="number">23</span><span class="symbol">V</span><span class="name">Vanadio</span><span
+                        class="valency">2,3,4,5</span></div>
+                <div class="element active" style="grid-column: 6; grid-row: 4;" data-name="Cromo"
+                        data-desc="Elemento traza en el azúcar moreno y las melazas." data-img="img/cromo.jpg"><span class="number">24</span><span
+                                class="symbol">Cr</span><span class="name">Cromo</span><span class="valency">2,3,6</span></div>
+                <div class="element active" style="grid-column: 7; grid-row: 4;" data-name="Manganeso"
+                    data-desc="Mineral traza encontrado en cereales y especias como la canela." data-img="img/manganeso.jpg"><span
+                        class="number">25</span><span class="symbol">Mn</span><span class="name">Manganeso</span><span
+                        class="valency">2,3,4,6,7</span></div>
+                <div class="element active" style="grid-column: 8; grid-row: 4;" data-name="Hierro"
+                    data-desc="Elemento con el que se enriquecen las harinas de trigo comerciales." data-img="img/hierro.jpg"><span
+                        class="number">26</span><span class="symbol">Fe</span><span class="name">Hierro</span><span
+                        class="valency">2,3</span></div>
+                <div class="element active" style="grid-column: 9; grid-row: 4;" data-name="Cobalto"
+                    data-desc="Parte de la vitamina B12 presente en ingredientes de origen animal." data-img="img/cobalto.jpg"><span
+                        class="number">27</span><span class="symbol">Co</span><span class="name">Cobalto</span><span
+                        class="valency">2,3</span></div>
+                <div class="element active" style="grid-column: 10; grid-row: 4;" data-name="Níquel"
+                    data-desc="Utilizado en el acero inoxidable de batidoras y espátulas." data-img="img/niquel.jpg"><span
+                        class="number">28</span><span class="symbol">Ni</span><span class="name">Níquel</span><span
+                        class="valency">2,3</span></div>
+                <div class="element active" style="grid-column: 11; grid-row: 4;" data-name="Cobre"
+                    data-desc="Los cuencos de cobre son ideales para montar claras de huevo por su reacción química." data-img="img/cobre.jpg"><span
+                        class="number">29</span><span class="symbol">Cu</span><span class="name">Cobre</span><span
+                        class="valency">1,2</span></div>
+                <div class="element active" style="grid-column: 12; grid-row: 4;" data-name="Zinc"
+                    data-desc="Micronutriente presente en granos integrales usados en repostería saludable." data-img="img/zinc.jpg"><span
+                        class="number">30</span><span class="symbol">Zn</span><span class="name">Zinc</span><span
+                        class="valency">2</span></div>
+                <div class="element inactive" style="grid-column: 13; grid-row: 4;"><span class="number">31</span><span
+                        class="symbol">Ga</span><span class="name">Galio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 14; grid-row: 4;"><span class="number">32</span><span
+                        class="symbol">Ge</span><span class="name">Germanio</span><span class="valency">4</span></div>
+                <div class="element inactive" style="grid-column: 15; grid-row: 4;"><span class="number">33</span><span
+                        class="symbol">As</span><span class="name">Arsénico</span><span class="valency">3,5</span></div>
+                <div class="element active" style="grid-column: 16; grid-row: 4;" data-name="Selenio"
+                    data-desc="Antioxidante natural presente en las nueces de Brasil y huevos." data-img="img/selenio.jpg"><span
+                        class="number">34</span><span class="symbol">Se</span><span class="name">Selenio</span><span
+                        class="valency">2,4,6</span></div>
+                <div class="element inactive" style="grid-column: 17; grid-row: 4;"><span class="number">35</span><span
+                        class="symbol">Br</span><span class="name">Bromo</span><span class="valency">1,3,5,7</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 4;"><span class="number">36</span><span
+                        class="symbol">Kr</span><span class="name">Kriptón</span><span class="valency">0</span></div>
+                
+                <div class="element inactive" style="grid-column: 1; grid-row: 5;"><span class="number">37</span><span
+                        class="symbol">Rb</span><span class="name">Rubidio</span><span class="valency">1</span></div>
+                <div class="element inactive" style="grid-column: 2; grid-row: 5;"><span class="number">38</span><span
+                        class="symbol">Sr</span><span class="name">Estroncio</span><span class="valency">2</span></div>
+                <div class="element inactive" style="grid-column: 3; grid-row: 5;"><span class="number">39</span><span
+                        class="symbol">Y</span><span class="name">Itrio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 4; grid-row: 5;"><span class="number">40</span><span
+                        class="symbol">Zr</span><span class="name">Zirconio</span><span class="valency">4</span></div>
+                <div class="element inactive" style="grid-column: 5; grid-row: 5;"><span class="number">41</span><span
+                        class="symbol">Nb</span><span class="name">Niobio</span><span class="valency">3,5</span></div>
+                <div class="element active" style="grid-column: 6; grid-row: 5;" data-name="Molibdeno"
+                    data-desc="Cofactor esencial presente en las legumbres usadas en harinas alternativas." data-img="img/molibdeno.jpg"><span
+                        class="number">42</span><span class="symbol">Mo</span><span class="name">Molibdeno</span><span
+                        class="valency">2,3,4,5,6</span></div>
+                <div class="element inactive" style="grid-column: 7; grid-row: 5;"><span class="number">43</span><span
+                        class="symbol">Tc</span><span class="name">Tecnecio</span><span class="valency">7</span></div>
+                <div class="element inactive" style="grid-column: 8; grid-row: 5;"><span class="number">44</span><span
+                        class="symbol">Ru</span><span class="name">Rutenio</span><span class="valency">2,3,4,6,8</span></div>
+                <div class="element inactive" style="grid-column: 9; grid-row: 5;"><span class="number">45</span><span
+                        class="symbol">Rh</span><span class="name">Rodio</span><span class="valency">2,3,4</span></div>
+                <div class="element inactive" style="grid-column: 10; grid-row: 5;"><span class="number">46</span><span
+                        class="symbol">Pd</span><span class="name">Paladio</span><span class="valency">2,4</span></div>
+                <div class="element active" style="grid-column: 11; grid-row: 5;" data-name="Plata"
+                    data-desc="Usada en forma de finas láminas (E-174) para decorar pasteles de lujo." data-img="img/plata.jpg"><span
+                        class="number">47</span><span class="symbol">Ag</span><span class="name">Plata</span><span
+                        class="valency">1</span></div>
+                <div class="element active" style="grid-column: 12; grid-row: 5;" data-name="Cadmio"
+                    data-desc="Trazas vigiladas en el cacao por su absorción del suelo." data-img="img/cadmio.jpg"><span class="number">48</span><span
+                        class="symbol">Cd</span><span class="name">Cadmio</span><span class="valency">2</span></div>
+                <div class="element inactive" style="grid-column: 13; grid-row: 5;"><span class="number">49</span><span
+                        class="symbol">In</span><span class="name">Indio</span><span class="valency">3</span></div>
+                <div class="element active" style="grid-column: 14; grid-row: 5;" data-name="Estaño"
+                    data-desc="Recubrimiento tradicional de moldes de cobre para evitar toxicidad." data-img="img/estano.jpg"><span
+                        class="number">50</span><span class="symbol">Sn</span><span class="name">Estaño</span><span
+                        class="valency">2,4</span></div>
+                <div class="element active" style="grid-column: 15; grid-row: 5;" data-name="Antimonio"
+                    data-desc="Trazas presentes en algunos esmaltes de cerámicas para hornear." data-img="img/antimonio.jpg"><span
+                        class="number">51</span><span class="symbol">Sb</span><span class="name">Antimonio</span><span
+                        class="valency">3,5</span></div>
+                <div class="element inactive" style="grid-column: 16; grid-row: 5;"><span class="number">52</span><span
+                        class="symbol">Te</span><span class="name">Telurio</span><span class="valency">2,4,6</span></div>
+                <div class="element active" style="grid-column: 17; grid-row: 5;" data-name="Yodo"
+                    data-desc="Presente en la sal yodada usada para realzar el sabor de los postres." data-img="img/yodo.jpg"><span
+                        class="number">53</span><span class="symbol">I</span><span class="name">Yodo</span><span
+                        class="valency">1,3,5,7</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 5;"><span class="number">54</span><span
+                        class="symbol">Xe</span><span class="name">Xenón</span><span class="valency">0</span></div>
+                
+                <div class="element inactive" style="grid-column: 1; grid-row: 6;"><span class="number">55</span><span
+                        class="symbol">Cs</span><span class="name">Cesio</span><span class="valency">1</span></div>
+                <div class="element active" style="grid-column: 2; grid-row: 6;" data-name="Bario"
+                    data-desc="Usado en la fabricación de ciertos tipos de cristalería fina para postres." data-img="img/bario.jpg"><span
+                        class="number">56</span><span class="symbol">Ba</span><span class="name">Bario</span><span
+                        class="valency">2</span></div>
+                <div class="element inactive" style="grid-column: 3; grid-row: 6;"><span class="number">57-71</span><span
+                        class="symbol">*</span><span class="name">Lantánidos</span></div>
+                <div class="element inactive" style="grid-column: 4; grid-row: 6;"><span class="number">72</span><span
+                        class="symbol">Hf</span><span class="name">Hafnio</span><span class="valency">4</span></div>
+                <div class="element inactive" style="grid-column: 5; grid-row: 6;"><span class="number">73</span><span
+                        class="symbol">Ta</span><span class="name">Tantalio</span><span class="valency">5</span></div>
+                <div class="element inactive" style="grid-column: 6; grid-row: 6;"><span class="number">74</span><span
+                        class="symbol">W</span><span class="name">Wolframio</span><span class="valency">2,3,4,5,6</span></div>
+                <div class="element inactive" style="grid-column: 7; grid-row: 6;"><span class="number">75</span><span
+                        class="symbol">Re</span><span class="name">Renio</span><span class="valency">2,4,6,7</span></div>
+                <div class="element inactive" style="grid-column: 8; grid-row: 6;"><span class="number">76</span><span
+                        class="symbol">Os</span><span class="name">Osmio</span><span class="valency">2,3,4,6,8</span></div>
+                <div class="element inactive" style="grid-column: 9; grid-row: 6;"><span class="number">77</span><span
+                        class="symbol">Ir</span><span class="name">Iridio</span><span class="valency">2,3,4,6</span></div>
+                <div class="element active" style="grid-column: 10; grid-row: 6;" data-name="Platino"
+                    data-desc="Catalizador en la creación de siliconas de grado alimentario para moldes." data-img="img/platino.jpg"><span
+                        class="number">78</span><span class="symbol">Pt</span><span class="name">Platino</span><span
+                        class="valency">2,4</span></div>
+                <div class="element active" style="grid-column: 11; grid-row: 6;" data-name="Oro"
+                    data-desc="Oro comestible (E-175) utilizado como decoración de alta gama." data-img="img/oro.jpg"><span
+                        class="number">79</span><span class="symbol">Au</span><span class="name">Oro</span><span
+                        class="valency">1,3</span></div>
+                <div class="element active" style="grid-column: 12; grid-row: 6;" data-name="Mercurio"
+                    data-desc="Elemento vigilado en jarabes y endulzantes por seguridad alimentaria." data-img="img/mercurio.jpg"><span
+                        class="number">80</span><span class="symbol">Hg</span><span class="name">Mercurio</span><span
+                        class="valency">1,2</span></div>
+                <div class="element inactive" style="grid-column: 13; grid-row: 6;"><span class="number">81</span><span
+                        class="symbol">Tl</span><span class="name">Talio</span><span class="valency">1,3</span></div>
+                <div class="element active" style="grid-column: 14; grid-row: 6;" data-name="Plomo"
+                    data-desc="Metal prohibido pero monitoreado en cerámicas antiguas de repostería." data-img="img/plomo.jpg"><span
+                        class="number">82</span><span class="symbol">Pb</span><span class="name">Plomo</span><span
+                        class="valency">2,4</span></div>
+                <div class="element inactive" style="grid-column: 15; grid-row: 6;"><span class="number">83</span><span
+                        class="symbol">Bi</span><span class="name">Bismuto</span><span class="valency">3,5</span></div>
+                <div class="element inactive" style="grid-column: 16; grid-row: 6;"><span class="number">84</span><span
+                        class="symbol">Po</span><span class="name">Polonio</span><span class="valency">2,4</span></div>
+                <div class="element inactive" style="grid-column: 17; grid-row: 6;"><span class="number">85</span><span
+                        class="symbol">At</span><span class="name">Astato</span><span class="valency">1,3,5,7</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 6;"><span class="number">86</span><span
+                        class="symbol">Rn</span><span class="name">Radón</span><span class="valency">0</span></div>
+                
+                <div class="element inactive" style="grid-column: 1; grid-row: 7;"><span class="number">87</span><span
+                        class="symbol">Fr</span><span class="name">Francio</span><span class="valency">1</span></div>
+                <div class="element inactive" style="grid-column: 2; grid-row: 7;"><span class="number">88</span><span
+                        class="symbol">Ra</span><span class="name">Radio</span><span class="valency">2</span></div>
+                <div class="element inactive" style="grid-column: 3; grid-row: 7;"><span class="number">89-103</span><span
+                        class="symbol">**</span><span class="name">Actínidos</span></div>
+                <div class="element inactive" style="grid-column: 4; grid-row: 7;"><span class="number">104</span><span
+                        class="symbol">Rf</span><span class="name">Rutherfordio</span><span class="valency">4</span></div>
+                <div class="element inactive" style="grid-column: 5; grid-row: 7;"><span class="number">105</span><span
+                        class="symbol">Db</span><span class="name">Dubnio</span><span class="valency">5</span></div>
+                <div class="element inactive" style="grid-column: 6; grid-row: 7;"><span class="number">106</span><span
+                        class="symbol">Sg</span><span class="name">Seaborgio</span><span class="valency">6</span></div>
+                <div class="element inactive" style="grid-column: 7; grid-row: 7;"><span class="number">107</span><span
+                        class="symbol">Bh</span><span class="name">Bohrio</span><span class="valency">7</span></div>
+                <div class="element inactive" style="grid-column: 8; grid-row: 7;"><span class="number">108</span><span
+                        class="symbol">Hs</span><span class="name">Hassio</span><span class="valency">8</span></div>
+                <div class="element inactive" style="grid-column: 9; grid-row: 7;"><span class="number">109</span><span
+                        class="symbol">Mt</span><span class="name">Meitnerio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 10; grid-row: 7;"><span class="number">110</span><span
+                        class="symbol">Ds</span><span class="name">Darmstadtio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 11; grid-row: 7;"><span class="number">111</span><span
+                        class="symbol">Rg</span><span class="name">Roentgenio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 12; grid-row: 7;"><span class="number">112</span><span
+                        class="symbol">Cn</span><span class="name">Copernicio</span><span class="valency">2</span></div>
+                <div class="element inactive" style="grid-column: 13; grid-row: 7;"><span class="number">113</span><span
+                        class="symbol">Nh</span><span class="name">Nihonio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 14; grid-row: 7;"><span class="number">114</span><span
+                        class="symbol">Fl</span><span class="name">Flerovio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 15; grid-row: 7;"><span class="number">115</span><span
+                        class="symbol">Mc</span><span class="name">Moscovio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 16; grid-row: 7;"><span class="number">116</span><span
+                        class="symbol">Lv</span><span class="name">Livermorio</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 17; grid-row: 7;"><span class="number">117</span><span
+                        class="symbol">Ts</span><span class="name">Teneso</span><span class="valency">-</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 7;"><span class="number">118</span><span
+                        class="symbol">Og</span><span class="name">Oganesón</span><span class="valency">-</span></div>
+                
+                <div class="element inactive" style="grid-column: 4; grid-row: 9;"><span class="number">57</span><span
+                        class="symbol">La</span><span class="name">Lantano</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 5; grid-row: 9;"><span class="number">58</span><span
+                        class="symbol">Ce</span><span class="name">Cerio</span><span class="valency">3,4</span></div>
+                <div class="element inactive" style="grid-column: 6; grid-row: 9;"><span class="number">59</span><span
+                        class="symbol">Pr</span><span class="name">Praseodimio</span><span class="valency">3,4</span></div>
+                <div class="element inactive" style="grid-column: 7; grid-row: 9;"><span class="number">60</span><span
+                        class="symbol">Nd</span><span class="name">Neodimio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 8; grid-row: 9;"><span class="number">61</span><span
+                        class="symbol">Pm</span><span class="name">Prometio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 9; grid-row: 9;"><span class="number">62</span><span
+                        class="symbol">Sm</span><span class="name">Samario</span><span class="valency">2,3</span></div>
+                <div class="element inactive" style="grid-column: 10; grid-row: 9;"><span class="number">63</span><span
+                        class="symbol">Eu</span><span class="name">Europio</span><span class="valency">2,3</span></div>
+                <div class="element inactive" style="grid-column: 11; grid-row: 9;"><span class="number">64</span><span
+                        class="symbol">Gd</span><span class="name">Gadolinio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 12; grid-row: 9;"><span class="number">65</span><span
+                        class="symbol">Tb</span><span class="name">Terbio</span><span class="valency">3,4</span></div>
+                <div class="element inactive" style="grid-column: 13; grid-row: 9;"><span class="number">66</span><span
+                        class="symbol">Dy</span><span class="name">Disprosio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 14; grid-row: 9;"><span class="number">67</span><span
+                        class="symbol">Ho</span><span class="name">Holmio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 15; grid-row: 9;"><span class="number">68</span><span
+                        class="symbol">Er</span><span class="name">Erbio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 16; grid-row: 9;"><span class="number">69</span><span
+                        class="symbol">Tm</span><span class="name">Tulio</span><span class="valency">2,3</span></div>
+                <div class="element inactive" style="grid-column: 17; grid-row: 9;"><span class="number">70</span><span
+                        class="symbol">Yb</span><span class="name">Iterbio</span><span class="valency">2,3</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 9;"><span class="number">71</span><span
+                        class="symbol">Lu</span><span class="name">Lutecio</span><span class="valency">3</span></div>
+                
+                <div class="element inactive" style="grid-column: 4; grid-row: 10;"><span class="number">89</span><span
+                        class="symbol">Ac</span><span class="name">Actinio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 5; grid-row: 10;"><span class="number">90</span><span
+                        class="symbol">Th</span><span class="name">Torio</span><span class="valency">4</span></div>
+                <div class="element inactive" style="grid-column: 6; grid-row: 10;"><span class="number">91</span><span
+                        class="symbol">Pa</span><span class="name">Protactinio</span><span class="valency">4,5</span></div>
+                <div class="element inactive" style="grid-column: 7; grid-row: 10;"><span class="number">92</span><span
+                        class="symbol">U</span><span class="name">Uranio</span><span class="valency">3,4,5,6</span></div>
+                <div class="element inactive" style="grid-column: 8; grid-row: 10;"><span class="number">93</span><span
+                        class="symbol">Np</span><span class="name">Neptunio</span><span class="valency">3,4,5,6</span></div>
+                <div class="element inactive" style="grid-column: 9; grid-row: 10;"><span class="number">94</span><span
+                        class="symbol">Pu</span><span class="name">Plutonio</span><span class="valency">3,4,5,6</span></div>
+                <div class="element inactive" style="grid-column: 10; grid-row: 10;"><span class="number">95</span><span
+                        class="symbol">Am</span><span class="name">Americio</span><span class="valency">3,4,5,6</span></div>
+                <div class="element inactive" style="grid-column: 11; grid-row: 10;"><span class="number">96</span><span
+                        class="symbol">Cm</span><span class="name">Curio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 12; grid-row: 10;"><span class="number">97</span><span
+                        class="symbol">Bk</span><span class="name">Berkelio</span><span class="valency">3,4</span></div>
+                <div class="element inactive" style="grid-column: 13; grid-row: 10;"><span class="number">98</span><span
+                        class="symbol">Cf</span><span class="name">Californio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 14; grid-row: 10;"><span class="number">99</span><span
+                        class="symbol">Es</span><span class="name">Einstenio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 15; grid-row: 10;"><span class="number">100</span><span
+                        class="symbol">Fm</span><span class="name">Fermio</span><span class="valency">3</span></div>
+                <div class="element inactive" style="grid-column: 16; grid-row: 10;"><span class="number">101</span><span
+                        class="symbol">Md</span><span class="name">Mendelevio</span><span class="valency">2,3</span></div>
+                <div class="element inactive" style="grid-column: 17; grid-row: 10;"><span class="number">102</span><span
+                        class="symbol">No</span><span class="name">Nobelio</span><span class="valency">2,3</span></div>
+                <div class="element inactive" style="grid-column: 18; grid-row: 10;"><span class="number">103</span><span
+                        class="symbol">Lr</span><span class="name">Laurencio</span><span class="valency">3</span></div>
+            </div>
+            <aside id="info-panel" class="info-panel">
+                <button id="close-btn" class="close-btn" title="Cerrar">&times;</button>
+                <div id="panel-content">
+                    <h2 id="info-title">Selecciona un elemento</h2>
+                    <img id="info-img" src="" alt="Elemento" class="element-img">
+                    <p id="info-desc">Haz clic en un elemento activo para ver su descripción.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
