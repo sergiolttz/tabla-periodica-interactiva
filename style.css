@@ -225,63 +225,42 @@ header p {
     pointer-events: none;
 }
 
-/* --- Cambios para Responsividad --- */
 
 @media (max-width: 1024px) {
-    body {
-        padding: 10px;
-    }
+
+    /* Quitamos el scroll de cualquier otro contenedor */
+    body,
 
     .content-container {
         flex-direction: column;
-        /* Panel debajo de la tabla */
         align-items: center;
     }
 
-    .main-wrapper {
+    .periodic-table {
+        display: grid;
+        grid-template-columns: repeat(18, 60px);
+        grid-template-rows: repeat(10, 70px);
+        gap: 8px;
+        padding: 20px;
         width: 100%;
         overflow-x: auto;
-        /* Permite scroll horizontal si la tabla no cabe */
-        padding-bottom: 20px;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .periodic-table {
-        /* Mantenemos el grid mínimo para que sea legible */
-        grid-template-columns: repeat(18, 55px);
-        grid-template-rows: repeat(10, 65px);
-        margin: 0 auto;
+    .symbol {
+        font-size: 1.1rem;
+    }
+
+    .number {
+        font-size: 0.65rem;
     }
 
     .info-panel {
         width: 100%;
         max-width: 600px;
         position: relative;
-        /* Ya no es sticky */
-        top: 0;
-        transform: translateY(30px);
-        /* Animación desde abajo */
         margin-top: 20px;
-    }
-
-    .info-panel.visible {
-        transform: translateY(0);
-    }
-}
-
-/* Ajuste extra para móviles muy pequeños */
-@media (max-width: 600px) {
-    .periodic-table {
-        grid-template-columns: repeat(18, 45px);
-        grid-template-rows: repeat(10, 55px);
-        gap: 4px;
-        padding: 10px;
-    }
-
-    .symbol {
-        font-size: 1rem;
-    }
-
-    .number {
-        font-size: 0.55rem;
+        transform: translateY(20px);
     }
 }
